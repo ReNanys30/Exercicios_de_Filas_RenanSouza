@@ -67,8 +67,6 @@ int main() {
 
     int soma = 0;
 
-    printf("Processando fila...\n\n");
-
 for (int i = 0; i < TAM; i++) {
         printf("Atendendo: %s (tempo: %d minutos)\n",
                fila[i].nome, fila[i].tempo);
