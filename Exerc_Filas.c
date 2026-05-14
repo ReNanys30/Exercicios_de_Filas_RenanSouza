@@ -146,25 +146,23 @@ int main() {
 
     int i, prioridade = -1;
 
-   
+
     for (i = 0; i < TAM; i++) {
         if (fila[i].idade > 65) {
             prioridade = i;
-            break;
+            break; 
         }
     }
 
-    printf("Atendimento da fila:\n\n");
 
-   
     if (prioridade != -1) {
         printf("Atendendo prioritário:\n");
-        printf("  Nome: %s\n", fila[prioridade.nome);
+        printf("  Nome: %s\n", fila[prioridade].nome); // Corrigido aqui
         printf("  Idade: %d\n\n", fila[prioridade].idade);
     }
 
-       for (i = 0; i < TAM; i++) {
-        if (i == prioridade) continue;
+    for (i = 0; i < TAM; i++) {
+        if (i == prioridade) continue; // Pula quem já foi atendido
 
         printf("Atendendo:\n");
         printf("  Nome: %s\n", fila[i].nome);
