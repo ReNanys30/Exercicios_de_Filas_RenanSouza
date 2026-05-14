@@ -8,7 +8,7 @@ typedef struct {
     char nome[50];
     char cpf[15];
     char dataNasc[11];
-    char motivo[10]; // "Reclamar" ou "Elogiar"
+    char motivo[10]; 
 } Pessoa;
 
 int main() {
@@ -53,7 +53,7 @@ int main() {
 
 typedef struct {
     char nome[50];
-    int tempo; // em minutos
+    int tempo;
 } Pessoa;
 
 int main() {
